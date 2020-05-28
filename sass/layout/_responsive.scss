@@ -5,6 +5,9 @@
     .right {
         width: 70% !important;
     }
+    .card {
+        margin-top: 10rem;
+    }
 
 }
 @media(max-width:992px) {
@@ -62,5 +65,10 @@
     h4 {
         font-size: 10px;
     }
-
+    .dropdown2 {
+        display: none;
+    }
+    .our-nav {
+        justify-content: center !important;
+    }
 }
