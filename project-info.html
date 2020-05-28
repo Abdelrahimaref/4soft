@@ -235,112 +235,253 @@
     <!---------End Navbar Section ------->
 
     <!-------- Start Body Section ------->
-
-        <main class="d-flex justify-content-between mt-5">
-            <div class="left" style="width: 15%;" >
-                <!-- Sidebar (Fixed Column Navbar)-->
-                <div class="bg-white shadow mt-1"style="width:100% ; height:1400px" >
-                    <ul class="pt-5 unstyled-list" style="position:fixed" >
-                        <li class="pt-5 active"><a href="index.html"> <i class="fas fa-home f-20 ml-3 mr-3"></i> Control Panel </a> </li>
-                        <li class="pt-5"><a href="hub.html"> <i class="fas fa-cubes f-20 ml-3 mr-3"></i> Applications </a> </li>
-                        <li class="pt-5"><a href="chat.html"><i class="fas fa-comments ml-3 mr-3 fa-lg"></i> Chat</a> <span class="badge badge-primary">3</span></li>
-                        <li class="pt-5"><a href="edit.html"><i class="fas fa-cogs f-20 ml-3 mr-3"></i> Editing</a></li>
-                        </ul>
-                </div>
-            </div>
-            <div class="right" style="width: 84%;padding-top: 8rem;">
-                <div class="container">
-                    <div class="img-profile"></div>
-                    <div class="text-warning mt-5 d-flex justify-content-start">
-                        <i class='fas fa-star ml-2'></i><i class='fas fa-star ml-2'></i><i class='fas fa-star ml-2'></i><i class='fas fa-star ml-2'></i>
-                    </div>
-                    <ul class="unstyled-list mt-4 d-flex">
-                        <li class="pt-2 mr-5">
-                            <img src="images/cmt2.jpg" alt="User" class="navbar-nav__img rounded-circle mr-3" >
-                            <span class="cursor-pointer text-secondary pr-3 ">Mohamed</span>
-                        </li>
-                        <li class="pt-4">
-                            <span class="cursor-pointer text-secondary pr-3 ">27 seat available</span>
-                        </li>
+    <main class="mt-5 d-flex justify-content-between">
+    <!------------ Left Srction ------------->
+        <!----------- Fixed Column Nav ---------->
+        <div class="left" style="width: 15%;" >
+            <!-- Sidebar (Fixed Column Navbar)-->
+            <div class="bg-white shadow mt-1"style="width:100% ; height:1700px" >
+                <ul class="pt-5 unstyled-list" style="position:fixed" >
+                    <li class="pt-5 active"><a href="index.html"> <i class="fas fa-home f-20 ml-3 mr-3"></i> Control Panel </a> </li>
+                    <li class="pt-5"><a href="hub.html"> <i class="fas fa-cubes f-20 ml-3 mr-3"></i> Applications </a> </li>
+                    <li class="pt-5"><a href="chat.html"><i class="fas fa-comments ml-3 mr-3 fa-lg"></i> Chat</a> <span class="badge badge-primary">3</span></li>
+                    <li class="pt-5"><a href="edit.html"><i class="fas fa-cogs f-20 ml-3 mr-3"></i> Editing</a></li>
                     </ul>
-                    <div class="d-flex justify-content-between">
-                        <h2> Bio Informatics Course </h2>
-                        <p class="p-2 pr-5 pl-5 border border-danger" style="border-radius: 15px;"> 50.99 $ </p>
-                    </div>
+            </div>
+        </div>
+        <div class="right pt-0 " style="width: 84%;">
 
-                    <div class="profile-nav row">
-                        <div class="col-md-4 text-center profile-nav__active about-btn"> About Course </div>
-                        <div class="col-md-4 text-center instructor-btn">About instructor</div>
-                    </div>
-
-
-                            <!--------- overview Section-------->
-                        <div class="container overview-section">
-                            <section class="OverView" style="padding-top: 10rem;" data-wow-duration="2s" data-wow-delay="0s">
-                                <h5 class="text-secondary">About Course</h5>  
-                                <p class="text-muted h3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Voluptatum iste ratione sequi, corrupti omnis doloribus, adipisci, quod enim aspernatur 
-                                    explicabo fugit! Voluptas eveniet neque possimus soluta reprehenderit ab quae veritatis! </p>
-                                <p>Content</p>
-                                <ul class="unstyled-list h3">
-                                    <li>- Html</li>
-                                    <li>- Html5</li>
-                                    <li>- Css</li>
-                                    <li>- Css3</li>
-                                    <li>- JavaScript</li>
-                                    <li>- Bootstrap 3</li>
-                                    <li>- Bootstrap 4</li>
-                                    <li>- Jquery</li>
-                                </ul>   
-                            </section>
+            <section>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 ml-auto">
+                            <div class="row pt-md-5 mt-md-3 mb-5 d-flex justify-content-center">
+                                <div class="col-xl-3 col-sm-6 p-2">
+                                    <div class="card card-common">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <i class="fas fa-shopping-cart fa-3x text-warning"></i>
+                                                <div class="text-right text-secondary">
+                                                    <h5>Sales</h5>
+                                                    <h3>$153.000</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer text-secondary">
+                                            <i class="fas fa-sync mr-3"></i>
+                                            <span>Updated</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-sm-6 p-2">
+                                    <div class="card card-common">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <i class="fas fa-users fa-3x text-info"></i>
+                                                <div class="text-right text-secondary">
+                                                    <h5>Users</h5>
+                                                    <h3>15</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer text-secondary">
+                                            <i class="fas fa-sync mr-3"></i>
+                                            <span>Updated</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-sm-6 p-2">
+                                    <div class="card card-common">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <i class="fas fa-chart-line fa-3x text-danger"></i>
+                                                <div class="text-right text-secondary">
+                                                    <h5>Views</h5>
+                                                    <h3>45</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer text-secondary">
+                                            <i class="fas fa-sync mr-3"></i>
+                                            <span>Updated</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <!--------- overview Section-------->
-                    <!-- ------- ٌ Register Section------
-                    <div class="container Register hidden" dir="ltr" >
-                        <section class="send-request" style="padding-top: 10rem;">
-                        <div class="col-md-10 offset-md-1 wow fadeInUp card-cover" data-wow-duration="2s" data-wow-delay="0s">
-                
-                            <h3 class="text-center">بادر بالتسجيل فى الكورس</h3>
-                            <form class="form-group" role="form" autocomplete="off"action=""> 
-                                <input type="text"placeholder="اسمك كامل"class="form-control" style="margin-bottom: 1rem;" name="name"> 
-                                <input type="email"placeholder="ايملك"class="form-control" style="margin-bottom: 1rem;" name="email"> 
-                                <input type="password"placeholder="تأكيد كلمة المرور"class="form-control" style="margin-bottom: 1rem;" name="pass"> 
-                            </form>  
-                            <div class=" text-center">
-                                <button class="btn btn-primary my-4 btn-lg pl-5 pr-5" onclick="success2()"> تسجيل</button>
-                            </div>    
-                        </div>
-                        </section>
-                    </div> -->
-
-
-                    <!---------- Instructor Overview --------->
-                    <div class="container overview-section2 hidden">
-                        <section class="OverView2" style="padding-top: 10rem;" data-wow-duration="2s" data-wow-delay="0s">
-                            <h5 class="text-secondary"> About Instructor </h5>  
-                            <p class="text-muted h3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis 
-                                consequuntur expedita quo quis voluptatum officiis quia tempore quae suscipit, quos ipsa 
-                                molestiae ipsum, numquam odit? Odit consequuntur aspernatur delectus explicabo?</p>
-                            <p>Content :-</p>
-                            <ul class="unstyled-list h3">
-                                <li>- Html</li>
-                                <li>- Html5</li>
-                                <li>- Css</li>
-                                <li>- Css3</li>
-                                <li>- JavaScript</li>
-                                <li>- Bootstrap 3</li>
-                                <li>- Bootstrap 4</li>
-                                <li>- Jquery</li>
-                            </ul>   
-                        </section>
                     </div>
 
                 </div>
+            </section>
+            
+            <div class="d-flex justify-content-center">
+
+                <div class="card form-card" style="width: 60%;">
+                    <div class="form-group">
+                        <div class="form-group">
+                            <div class="col-lg-12 form-group mt-5">
+                                <label for="project-nameID" class="text-secondary">Project Name</label>
+                                <input type="text" name="project-name" id="project-nameID" class="c-form__control text-secondary" maxlength="60">
+                                <p class="form-note text-secondary">*note: The name of the project must be clear</p>    
+                            </div> 
+                            <div class="col-lg-12 form-group mt-5">
+                                <label for="cat-select" class="text-secondary">Category</label>
+                                <select name="select-category" id="cat-select" class="form-select c-form__control">
+                                    <option value="1">Select Category</option>
+                                    <option value="1">Web</option>
+                                    <option value="1">Mobile App</option>
+                                    <option value="1">Desktop App</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-12 form-group mt-5">
+                                <label for="project-desc" class="text-secondary">Project Description</label>
+                                <textarea name="textarea" id="project-desc" cols="30"  class="c-form__control" style="height: 150px;"></textarea>
+                            </div>
+                            <div class="col-lg-12 form-group mt-5">
+                                <div class="gallery-service">
+                                    <button class="btn btn-success mb-4 bg-transparent btn-photo" data-toggle="modal" data-target="#create-select">
+                                        Add Photo Or Vedio
+                                    </button>
+                                    <p>Size: (800x470) Pixels Maximum size: 2MB Allowed number: 10 files
+    
+                                        Choosing a well-designed video or photo will serve you professionally and increase your sales.
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 form-group mt-5">
+                                <label for="project-keyID" class="text-secondary">Keywords</label>
+                                <input type="text" name="project-key" id="project-keyID" class="c-form__control text-secondary" maxlength="60">
+                                <p class="form-note text-secondary">*ex: Web Developement , wordpress , design ...etc </p>    
+                            </div> 
+                            <!----------- For Upload Source Code --------->
+                            <div class="col-lg-12 form-group mt-5">
+                                <div class="gallery-service">
+                                    <button class="btn btn-success mb-4 bg-transparent btn-photo" id="src-btn">Upload project source code</button>
+                                    <input type="file" name="" id="file-btn" hidden="hidden">
+                                    <span id="customTxt2"></span>
+                                    <p class="mt-4"> Upload Only ZIP File </p>
+    
+                                </div>
+                            </div>
+                            <div class="col-lg-12 form-group mt-5">
+                                <label for="project-priceID" class="text-secondary"> Project Price In Egyptian Pound </label>
+                                <input type="text" name="project-price" id="project-priceID" class="c-form__control text-secondary" maxlength="60">
+                            </div>
+                            
+    
+                            <div class="form-group d-flex justify-content-center">
+                                <button class="btn btn-primary btn-lg mt-4 pl-5 pr-5 pt-3 pb-3" onclick="success2()">Done Editing</button>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
             </div>
 
-        </main>
 
+        </div>
+    </main>
+        
+
+
+    
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+      
+  <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['الربح الكامل ', 'نسبة الربح'],
+                datasets: [{
+                    label: 'أجمالى الربح',
+                    data: [50, 50],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.5)',
+                        'rgba(54, 162, 235, 0.5)',
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        display:false,
+                        ticks: {
+                            beginAtZero: true
+                            
+                        }
+                    }]
+                }
+            }
+        });
+  
+        // function updatechart(){
+        // const request = new XMLHttpRequest();
+        //     request.open('POST', 'index2.php');
+    
+        //     // Callback function for when request completes
+        //     request.onload = () => {
+        //         // Extract JSON data from request
+        //         console.log(request.responseText);
+        //         const data = JSON.parse(request.responseText);
+        //         v_arr = [];
+        //         l_arr = [];
+        //         color = [];
+        //         for(i in data ){
+        //             v_arr.push(data[i]*10);
+        //             l_arr.push(i);
+        //             color.push(color_code[i]);
+        //         }
+        //     }
+        //     request.send();
+        //     myChart.data.labels = l_arr;
+        //     myChart.data.datasets[0].data = v_arr;
+        //     myChart.data.datasets[0].backgroundColor = color;
+        //     myChart.update();
+        // }
+        //  setInterval(()=>{updatechart();}, 1000);
+      </script>
+
+       
+            <script>
+            var ctx = document.getElementById('myChart2').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['المشتركين', 'الحاليين ',' العدد الكلى '],
+                    datasets: [{
+                        label: 'عدد العملاء',
+                        data: [10, 40 , 50],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.5)',
+                            'rgba(54, 162, 235, 0.5)',
+                            'rgba(247, 202, 24, 0.5)'
+                        ],
+                        borderColor: [
+                            'f00',
+                            'rgba(54, 162, 235, 0.2)',
+                            'yellow'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+        </script>
         <script src="js/particles.js"></script>
         <script src="js/app.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>

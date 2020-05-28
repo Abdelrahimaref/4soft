@@ -16,13 +16,13 @@ html {
 }
 
 body {
-  font-family: "", sans-serif;
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
   font-weight: 400;
+  line-height: 1.5;
   color: #212529;
-  background-color: #f8f9fa;
-  height: 100%;
-  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -332,6 +332,22 @@ h4 {
   #back-btn {
     display: block;
   }
+
+  .form-card {
+    width: 100% !important;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
 }
 @media (max-width: 576px) {
   .left {
@@ -350,23 +366,44 @@ h4 {
   .slide-out {
     display: block;
   }
+
+  .chat {
+    margin-top: 8rem !important;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  h4 {
+    font-size: 10px;
+  }
 }
 .dropdown {
   list-style: none;
   position: relative;
 }
 
-.dropdown-menu {
+.dropdown2 {
+  list-style: none;
+  position: relative;
+}
+
+.dropdown-menu, .dropdown-menu2 {
   position: absolute;
   background-color: #FFF;
   top: 5.3rem;
   color: #000;
 }
-.dropdown-menu li {
+.dropdown-menu li, .dropdown-menu2 li {
   padding: 8px 14px;
   width: 20rem;
 }
-.dropdown-menu li:hover {
+.dropdown-menu li:hover, .dropdown-menu2 li:hover {
   background-color: rgba(0, 123, 255, 0.4);
 }
 
@@ -1050,6 +1087,107 @@ textarea {
     font-size: 3.5rem !important;
   }
 }
+.c-form__control {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 9px 10px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #888e99;
+  background-color: #f7f9fc;
+  background-image: none;
+  border: 1px solid #8e9198;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+label {
+  font-family: "Noto Kufi Arabic", "Open Sans", sans-serif;
+  margin-bottom: 10px;
+}
+
+label {
+  color: #555555;
+  font-size: 14px;
+  display: block;
+}
+
+.form-note {
+  font-size: 14px;
+  font-family: "Noto Naskh Arabic", "Open Sans", serif;
+  margin-top: 10px !important;
+}
+
+.form__select {
+  width: 100%;
+  height: 40px;
+  padding: 9px 10px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #888e99;
+  background-color: #f7f9fc;
+  border: 1px solid #8e9198;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.form__select:after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 18px;
+  text-rendering: auto;
+  font-smoothing: antialiased;
+  color: #888e99;
+  pointer-events: none;
+}
+
+/************** For Add Photo Or Vedios ****************/
+.gallery-service {
+  padding: 40px;
+  text-align: center;
+  background: #f7f9fc;
+  border: 0;
+}
+
+.btn-photo {
+  color: #52b035 !important;
+  background: transparent !important;
+  border-color: #52b035 !important;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-family: "Noto Kufi Arabic", "Open Sans", sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.8em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: 0.5s all;
+}
+.btn-photo:hover {
+  color: #fff !important;
+  background-color: #52b035 !important;
+  border-color: #52b035 !important;
+}
+
 .chat {
   margin-top: 1rem;
 }
@@ -1098,6 +1236,111 @@ textarea {
 }
 .chat .back-btn {
   display: none;
+}
+
+/* The container */
+.container-inp {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-inp input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container-inp:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-inp input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-inp input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-inp .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.project-header {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  height: 135px;
+  padding: 1rem;
+  text-align: center;
+}
+.project-header__name {
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.project-header__img {
+  border: 3px solid #fff;
+  height: 90px;
+  width: 100px;
+  margin-top: 2rem;
+}
+
+.description-block {
+  display: block;
+  margin: 10px 0;
+  text-align: center;
+}
+.description-block .description-header {
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 10px;
+  padding: 0;
+}
+.description-block .description-text {
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=main.css.map */

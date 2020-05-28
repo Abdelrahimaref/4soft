@@ -28,7 +28,15 @@
         <script src="js/respond.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 
-	   <!---->
+       <!---->
+       
+       <style>
+           @media(max-width: 992px) {
+                li {
+                    font-size: 10px;
+                }
+            }
+       </style>
 	</head>
 	<body>
    
@@ -131,11 +139,9 @@
 
 
                         <li class="pt-4 pr-5 dropdown">
-                                <a class="badge x">
-                                    <i  style="font-size: 18px;" class="fas fa-bell text-white fa-lg"></i>
-                                </a>
-
-
+                            <a class="badge x" style="cursor: pointer;">
+                                <i  style="font-size: 18px;" class="fas fa-bell text-white fa-lg"></i>
+                            </a>
                             <!---- Style in dropdown.scss(for dropdown styles) and notifiaction-num.scss(for number appear top of icon) ----->
                             <ul class="dropdown-menu">
                                 <li>
@@ -204,11 +210,21 @@
                                 </li>                            
                             </ul>
                         </li>
-                        <li class="pt-2 pr-5">
-                            <a href="">
+                        <li class="pt-2 pr-5 dropdown2">
+                            <a style="cursor: pointer;">
                                 <img src="images/cmt2.jpg" alt="User" class="navbar-nav__img rounded-circle" >
                                 <span class="cursor-pointer text-white pl-3 lead ">Mohamed</span>
                             </a>
+
+                            <!---- Style in dropdown.scss(for dropdown styles) and notifiaction-num.scss(for number appear top of icon) ----->
+                            <ul class="dropdown-menu2 unstyled-list" style="display: none;">
+                                <li style="width: 11rem; cursor: pointer;">
+                                    <div class="d-flex justify-content-between">
+                                        <p>Log Out</p>
+                                        <span><i class="fas fa-sign-out-alt"></i></span>
+                                    </div>
+                                </li>                                                        
+                            </ul>
                         </li>
                     </ul> 
                 </div>
@@ -226,9 +242,9 @@
             <div class="bg-white shadow mt-1"style="width:100% ; height:2000px" >
                 <ul class="pt-5 unstyled-list" style="position:fixed" >
                     <li class="pt-5 active"><a href="index.html"> <i class="fas fa-home f-20 ml-3 mr-3"></i> Control Panel </a> </li>
-                    <li class="pt-5"><a href=""> <i class="fas fa-cubes f-20 ml-3 mr-3"></i> Applications </a> </li>
+                    <li class="pt-5"><a href="hub.html"> <i class="fas fa-cubes f-20 ml-3 mr-3"></i> Applications </a> </li>
                     <li class="pt-5"><a href="chat.html"><i class="fas fa-comments ml-3 mr-3 fa-lg"></i> Chat</a> <span class="badge badge-primary">3</span></li>
-                    <li class="pt-5"><a href=""><i class="fas fa-cogs f-20 ml-3 mr-3"></i> Editing</a></li>
+                    <li class="pt-5"><a href="edit.html"><i class="fas fa-cogs f-20 ml-3 mr-3"></i> Editing</a></li>
                 </ul>
             </div>
         </div>
@@ -291,7 +307,7 @@
                             <div class="mb-5">
                                 <a href="course-content.html" class="post__img">
                                     <img src="images/8.jpg" alt="" class="h-225">
-                                     <div class="post__course-overlay">
+                                    <div class="post__course-overlay">
                                         <div class="post__course-overlay--seller">Best Seller</div>
                                         <div class="post__course-overlay--rate">
                                             <i class='fas fa-star'></i> 4.5

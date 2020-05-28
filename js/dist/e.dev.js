@@ -17,6 +17,28 @@ $('.slide-out').click(function () {
   $(this).hide(300);
   $('.slide-in').show(300);
 });
+$('.slide-in').click(function () {
+  if ($(window).width() <= 576) {
+    $('.left').hide(300);
+    $('.right').show(300);
+    $('.right').css({
+      width: '100%'
+    });
+    $('.slide-out').show(300);
+    $(this).hide(300);
+  }
+});
+$('.slide-out').click(function () {
+  if ($(window).width() <= 579) {
+    $('.left').show(300);
+    $('.left').css({
+      width: '90%'
+    });
+    $('.right').fadeOut(300);
+    $(this).hide(300);
+    $('.slide-in').show(300);
+  }
+});
 $('.about-btn').click(function () {
   $('.Register').hide(350);
   $('.overview-section2').hide(350);
@@ -65,6 +87,32 @@ $('.back-btn').click(function () {
 $('.dropdown').click(function () {
   $('.dropdown-menu').toggle(300);
 });
+$('.dropdown2').click(function () {
+  $('.dropdown-menu2').toggle(300);
+});
+/***********   Check Box  **********/
+
+$('#youtube').click(function () {
+  $('#youtube-inp').fadeIn(300);
+  $('#vedio-inp').fadeOut(300);
+  $('#choose-btn-pc').fadeOut(300);
+  $('#pic-btn').fadeOut(300);
+  $('#ved-btn').fadeIn(300);
+});
+$('#ph').click(function () {
+  $('#youtube-inp').fadeOut(300);
+  $('#vedio-inp').fadeOut(300);
+  $('#choose-btn-pc').fadeIn(300);
+  $('#pic-btn').fadeOut(300);
+  $('#ved-btn').fadeOut(300);
+});
+$('#ved').click(function () {
+  $('#vedio-inp').fadeIn(300);
+  $('#youtube-inp').fadeOut(300);
+  $('#choose-btn-pc').fadeOut(300);
+  $('#pic-btn').fadeIn(300);
+  $('#ved-btn').fadeOut(300);
+});
 
 function success() {
   var Toast = Swal.mixin({
@@ -75,7 +123,7 @@ function success() {
   });
   Toast.fire({
     type: 'success',
-    title: 'Request Send successfully'
+    title: 'Edit Done Succefully'
   });
 }
 
@@ -123,11 +171,24 @@ function success2() {
     toast: false,
     position: 'center',
     showConfirmButton: false,
-    timer: 3500
+    timer: 5500
   });
   Toast.fire({
     type: 'success',
-    title: 'Message Send successfully We will answer soon'
+    title: '4SOFT has received your request successfully and we will answer soon'
+  });
+}
+
+function success3() {
+  var Toast = Swal.mixin({
+    toast: false,
+    position: 'center',
+    showConfirmButton: false,
+    timer: 3000
+  });
+  Toast.fire({
+    type: 'success',
+    title: 'Updated successfully'
   });
 }
 
@@ -164,4 +225,30 @@ $(document).ready(function () {
     } // End if
 
   });
+});
+var real = document.getElementById('real-life');
+var btn = document.getElementById('choose-btn-pc');
+var customTxt = document.getElementById('customTxt');
+var srcBtn = document.getElementById('src-btn');
+var fileBtn = document.getElementById('file-btn');
+var customTxt2 = document.getElementById('customTxt2');
+btn.addEventListener("click", function () {
+  real.click();
+});
+real.addEventListener("change", function () {
+  if (real.value) {
+    customTxt.innerHTML = real.value;
+  } else {
+    customTxt.innerHTML = "No File Chosen yet !";
+  }
+});
+srcBtn.addEventListener("click", function () {
+  fileBtn.click();
+});
+fileBtn.addEventListener("change", function () {
+  if (fileBtn.value) {
+    customTxt2.innerHTML = fileBtn.value;
+  } else {
+    customTxt2.innerHTML = "No File Chosen yet !";
+  }
 });

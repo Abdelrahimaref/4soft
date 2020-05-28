@@ -235,111 +235,163 @@
     <!---------End Navbar Section ------->
 
     <!-------- Start Body Section ------->
-
-        <main class="d-flex justify-content-between mt-5">
-            <div class="left" style="width: 15%;" >
-                <!-- Sidebar (Fixed Column Navbar)-->
-                <div class="bg-white shadow mt-1"style="width:100% ; height:1400px" >
-                    <ul class="pt-5 unstyled-list" style="position:fixed" >
-                        <li class="pt-5 active"><a href="index.html"> <i class="fas fa-home f-20 ml-3 mr-3"></i> Control Panel </a> </li>
-                        <li class="pt-5"><a href="hub.html"> <i class="fas fa-cubes f-20 ml-3 mr-3"></i> Applications </a> </li>
-                        <li class="pt-5"><a href="chat.html"><i class="fas fa-comments ml-3 mr-3 fa-lg"></i> Chat</a> <span class="badge badge-primary">3</span></li>
-                        <li class="pt-5"><a href="edit.html"><i class="fas fa-cogs f-20 ml-3 mr-3"></i> Editing</a></li>
-                        </ul>
-                </div>
-            </div>
-            <div class="right" style="width: 84%;padding-top: 8rem;">
-                <div class="container">
-                    <div class="img-profile"></div>
-                    <div class="text-warning mt-5 d-flex justify-content-start">
-                        <i class='fas fa-star ml-2'></i><i class='fas fa-star ml-2'></i><i class='fas fa-star ml-2'></i><i class='fas fa-star ml-2'></i>
-                    </div>
-                    <ul class="unstyled-list mt-4 d-flex">
-                        <li class="pt-2 mr-5">
-                            <img src="images/cmt2.jpg" alt="User" class="navbar-nav__img rounded-circle mr-3" >
-                            <span class="cursor-pointer text-secondary pr-3 ">Mohamed</span>
-                        </li>
-                        <li class="pt-4">
-                            <span class="cursor-pointer text-secondary pr-3 ">27 seat available</span>
-                        </li>
+    <main class="mt-5 d-flex justify-content-between">
+    <!------------ Left Srction ------------->
+        <!----------- Fixed Column Nav ---------->
+        <div class="left" style="width: 15%;" >
+            <!-- Sidebar (Fixed Column Navbar)-->
+            <div class="bg-white shadow mt-1"style="width:100% ; height:1000px" >
+                <ul class="pt-5 unstyled-list" style="position:fixed" >
+                    <li class="pt-5 active"><a href="index.html"> <i class="fas fa-home f-20 ml-3 mr-3"></i> Control Panel </a> </li>
+                    <li class="pt-5"><a href=""> <i class="fas fa-cubes f-20 ml-3 mr-3"></i> Applications </a> </li>
+                    <li class="pt-5"><a href="chat.html"><i class="fas fa-comments ml-3 mr-3 fa-lg"></i> Chat</a> <span class="badge badge-primary">3</span></li>
+                    <li class="pt-5"><a href="edit.html"><i class="fas fa-cogs f-20 ml-3 mr-3"></i> Editing</a></li>
                     </ul>
-                    <div class="d-flex justify-content-between">
-                        <h2> Bio Informatics Course </h2>
-                        <p class="p-2 pr-5 pl-5 border border-danger" style="border-radius: 15px;"> 50.99 $ </p>
+            </div>
+        </div>
+
+
+        <div class="right pt-0" style="width: 84%;">
+            
+            <div class="profile-top bg-white pb-5" >
+                <div class="container">
+                    <div class="img-box text-center " style="height: 300px;padding-top: 12rem;">
+                        <img src="images/icons/Artboard 8_users.svg" class=" rounded-circle" alt="">
+                        <h3 class="pt-3 h3 text-secondary mb-4">Mohamed Ahmed</h3>
+                        <a href="balance.html" class="btn btn-primary p-3 pl-3 pr-3">My balance</a>
+                        <a href="addProject.html" class="btn btn-primary p-3 pl-3 pr-3">Add Project</a>
                     </div>
+                    <ul class="d-flex justify-content-between unstyled-list pt-5">
+                       <li class="text-center">
+                           <h3>
+                                <span><i class="fas fa-map-marker-alt mr-2 text-danger"></i></span> Country
+                           </h3>
+                           <h4 class="text-center mt-3">
+                               Egypt
+                           </h4>
+                        </li>
+                       <li class="text-center">
+                           <h3>
+                                <span><i class="fas fa-star mr-2 text-warning"></i></span> Rate
+                           </h3>
+                           <h4 class="text-center mt-3">
+                               5 %
+                           </h4>
 
-                    <div class="profile-nav row">
-                        <div class="col-md-4 text-center profile-nav__active about-btn"> About Course </div>
-                        <div class="col-md-4 text-center instructor-btn">About instructor</div>
-                    </div>
+                        </li>
+                       <li class="text-center">
+                           <h3>
+                                <span><i class="fas fa-users mr-2 text-info"></i></span> Customers Number
+                           </h3>
+                           <h4 class="text-center mt-3">
+                               16
+                           </h4>
 
+                        </li>
+                       <li class="text-center">
+                           <h3>
+                                <span class="badge bg-success rounded-circle mr-2" style="width: 12px; height: 13px;">&nbsp;</span> Last occurrence
+                           </h3>
+                           <h4 class="text-center mt-3">
+                                Now
+                           </h4>
+                        </li>
+                       <li class="text-center">
+                           <h3>
+                                <span><i class="fas fa-sync-alt mr-2 text-danger"></i></span> Sales Number
+                           </h3>
+                           <h4 class="text-center mt-3">
+                                12 Project
+                           </h4>
 
-                            <!--------- overview Section-------->
-                        <div class="container overview-section">
-                            <section class="OverView" style="padding-top: 10rem;" data-wow-duration="2s" data-wow-delay="0s">
-                                <h5 class="text-secondary">About Course</h5>  
-                                <p class="text-muted h3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Voluptatum iste ratione sequi, corrupti omnis doloribus, adipisci, quod enim aspernatur 
-                                    explicabo fugit! Voluptas eveniet neque possimus soluta reprehenderit ab quae veritatis! </p>
-                                <p>Content</p>
-                                <ul class="unstyled-list h3">
-                                    <li>- Html</li>
-                                    <li>- Html5</li>
-                                    <li>- Css</li>
-                                    <li>- Css3</li>
-                                    <li>- JavaScript</li>
-                                    <li>- Bootstrap 3</li>
-                                    <li>- Bootstrap 4</li>
-                                    <li>- Jquery</li>
-                                </ul>   
-                            </section>
-                        </div>
-
-                        <!--------- overview Section-------->
-                    <!-- ------- ٌ Register Section------
-                    <div class="container Register hidden" dir="ltr" >
-                        <section class="send-request" style="padding-top: 10rem;">
-                        <div class="col-md-10 offset-md-1 wow fadeInUp card-cover" data-wow-duration="2s" data-wow-delay="0s">
-                
-                            <h3 class="text-center">بادر بالتسجيل فى الكورس</h3>
-                            <form class="form-group" role="form" autocomplete="off"action=""> 
-                                <input type="text"placeholder="اسمك كامل"class="form-control" style="margin-bottom: 1rem;" name="name"> 
-                                <input type="email"placeholder="ايملك"class="form-control" style="margin-bottom: 1rem;" name="email"> 
-                                <input type="password"placeholder="تأكيد كلمة المرور"class="form-control" style="margin-bottom: 1rem;" name="pass"> 
-                            </form>  
-                            <div class=" text-center">
-                                <button class="btn btn-primary my-4 btn-lg pl-5 pr-5" onclick="success2()"> تسجيل</button>
-                            </div>    
-                        </div>
-                        </section>
-                    </div> -->
-
-
-                    <!---------- Instructor Overview --------->
-                    <div class="container overview-section2 hidden">
-                        <section class="OverView2" style="padding-top: 10rem;" data-wow-duration="2s" data-wow-delay="0s">
-                            <h5 class="text-secondary"> About Instructor </h5>  
-                            <p class="text-muted h3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis 
-                                consequuntur expedita quo quis voluptatum officiis quia tempore quae suscipit, quos ipsa 
-                                molestiae ipsum, numquam odit? Odit consequuntur aspernatur delectus explicabo?</p>
-                            <p>Content :-</p>
-                            <ul class="unstyled-list h3">
-                                <li>- Html</li>
-                                <li>- Html5</li>
-                                <li>- Css</li>
-                                <li>- Css3</li>
-                                <li>- JavaScript</li>
-                                <li>- Bootstrap 3</li>
-                                <li>- Bootstrap 4</li>
-                                <li>- Jquery</li>
-                            </ul>   
-                        </section>
-                    </div>
-
+                        </li> 
+                    </ul>
+    
                 </div>
             </div>
 
-        </main>
+            <div class="projects">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-sm-6 p-2">
+                            <a href="project-info.html">
+                                <div class="card shadow-none">
+                                    <div class="card-body">
+                                        <div class="text-center">
+                                            <img src="images/info.jpg" class="p-3" height="130" width="80%" alt="">
+                                            <div class="text-secondary">
+                                                <h4>Ecomerce project</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-secondary justify-content-between">
+                                        <span class="badge badge-danger">New</span>
+                                        <span>new update</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 p-2">
+                            <a href="project-info.html">
+                                <div class="card shadow-none">
+                                    <div class="card-body">
+                                        <div class="text-center">
+                                            <img src="images/info.jpg" class="p-3" height="130" width="80%" alt="">
+                                            <div class="text-secondary">
+                                                <h4>Ecomerce project</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-secondary justify-content-between">
+                                        <span class="badge badge-danger">New</span>
+                                        <span>new update</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 p-2">
+                            <a href="project-info.html">
+                                <div class="card shadow-none">
+                                    <div class="card-body">
+                                        <div class="text-center">
+                                            <img src="images/info.jpg" class="p-3" height="130" width="80%" alt="">
+                                            <div class="text-secondary">
+                                                <h4>Ecomerce project</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-secondary justify-content-between">
+                                        <span class="badge badge-danger">New</span>
+                                        <span>new update</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 p-2">
+                            <a href="project-info.html">
+                                <div class="card shadow-none">
+                                    <div class="card-body">
+                                        <div class="text-center">
+                                            <img src="images/info.jpg" class="p-3" height="130" width="80%" alt="">
+                                            <div class="text-secondary">
+                                                <h4>Ecomerce project</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-secondary justify-content-between">
+                                        <span class="badge badge-danger">New</span>
+                                        <span>new update</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
 
         <script src="js/particles.js"></script>
         <script src="js/app.js"></script>

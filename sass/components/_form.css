@@ -42,3 +42,106 @@ textarea {
     font-size: 3.5rem !important;
   }
 }
+
+.c-form__control {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 9px 10px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #888e99;
+  background-color: #f7f9fc;
+  background-image: none;
+  border: 1px solid #8e9198;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+label {
+  font-family: "Noto Kufi Arabic", "Open Sans", sans-serif;
+  margin-bottom: 10px;
+}
+
+label {
+  color: #555555;
+  font-size: 14px;
+  display: block;
+}
+
+.form-note {
+  font-size: 14px;
+  font-family: "Noto Naskh Arabic", "Open Sans", serif;
+  margin-top: 10px !important;
+}
+
+.form__select {
+  width: 100%;
+  height: 40px;
+  padding: 9px 10px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #888e99;
+  background-color: #f7f9fc;
+  border: 1px solid #8e9198;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.form__select:after {
+  content: "\f0d7";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 18px;
+  text-rendering: auto;
+  font-smoothing: antialiased;
+  color: #888e99;
+  pointer-events: none;
+}
+
+/************** For Add Photo Or Vedios ****************/
+.gallery-service {
+  padding: 40px;
+  text-align: center;
+  background: #f7f9fc;
+  border: 0;
+}
+
+.btn-photo {
+  color: #52b035 !important;
+  background: transparent !important;
+  border-color: #52b035 !important;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-family: "Noto Kufi Arabic", "Open Sans", sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.8em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: .5s all;
+}
+
+.btn-photo:hover {
+  color: #fff !important;
+  background-color: #52b035 !important;
+  border-color: #52b035 !important;
+}
