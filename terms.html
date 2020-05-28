@@ -240,7 +240,7 @@
         <!----------- Fixed Column Nav ---------->
         <div class="left" style="width: 15%;" >
             <!-- Sidebar (Fixed Column Navbar)-->
-            <div class="bg-white shadow mt-1"style="width:100% ; height:1500px" >
+            <div class="bg-white shadow mt-1"style="width:100% ; height:800px" >
                 <ul class="pt-5 unstyled-list" style="position:fixed" >
                     <li class="pt-5 active"><a href="index.html"> <i class="fas fa-home f-20 ml-3 mr-3"></i> Control Panel </a> </li>
                     <li class="pt-5"><a href="hub.html"> <i class="fas fa-cubes f-20 ml-3 mr-3"></i> Applications </a> </li>
@@ -253,71 +253,52 @@
 
 
         <div class="right pt-0 pb-5 bg d-flex justify-content-center" style="width: 84%;">
-            <div class="card form-card" style="width: 60%;">
-                <div class="form-group">
-                    <div class="form-group">
-                        <div class="col-lg-12 form-group mt-5">
-                            <label for="project-nameID" class="text-secondary">Project Name</label>
-                            <input type="text" name="project-name" id="project-nameID" class="c-form__control text-secondary" maxlength="60">
-                            <p class="form-note text-secondary">*note: The name of the project must be clear</p>    
-                        </div> 
-                        <div class="col-lg-12 form-group mt-5">
-                            <label for="cat-select" class="text-secondary">Category</label>
-                            <select name="select-category" id="cat-select" class="form-select c-form__control">
-                                <option value="1">Select Category</option>
-                                <option value="1">Web</option>
-                                <option value="1">Mobile App</option>
-                                <option value="1">Desktop App</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-12 form-group mt-5">
-                            <label for="project-desc" class="text-secondary">Project Description</label>
-                            <textarea name="textarea" id="project-desc" cols="30"  class="c-form__control" style="height: 150px;"></textarea>
-                        </div>
-                        <div class="col-lg-12 form-group mt-5">
-                            <div class="gallery-service">
-                                <button class="btn btn-success mb-4 bg-transparent btn-photo" data-toggle="modal" data-target="#create-select">
-                                    Add Photo Or Vedio
-                                </button>
-                                <p>Size: (800x470) Pixels Maximum size: 2MB Allowed number: 10 files
-
-                                    Choosing a well-designed video or photo will serve you professionally and increase your sales.
-                                    </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 form-group mt-5">
-                            <label for="project-keyID" class="text-secondary">Keywords</label>
-                            <input type="text" name="project-key" id="project-keyID" class="c-form__control text-secondary" maxlength="60">
-                            <p class="form-note text-secondary">*ex: Web Developement , wordpress , design ...etc </p>    
-                        </div> 
-                        <!----------- For Upload Source Code --------->
-                        <div class="col-lg-12 form-group mt-5">
-                            <div class="gallery-service">
-                                <button class="btn btn-success mb-4 bg-transparent btn-photo" id="src-btn">Upload project source code</button>
-                                <input type="file" name="" id="file-btn" hidden="hidden">
-                                <span id="customTxt2"></span>
-                                <p class="mt-4"> Upload Only ZIP File </p>
-
-                            </div>
-                        </div>
-                        <div class="col-lg-12 form-group mt-5">
-                            <label for="project-priceID" class="text-secondary"> Project Price In Egyptian Pound </label>
-                            <input type="text" name="project-price" id="project-priceID" class="c-form__control text-secondary" maxlength="60">
-                        </div>
-                        <a class="text-primary ml-5 mt-5" href="terms.html">Click here to show the terms and conditions</a>
-
-                        <label class="container-inp pt-5 ml-4">
-                            Agree to the terms and conditions
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                        
-
-                        <div class="form-group d-flex justify-content-center">
-                            <button class="btn btn-primary btn-lg mt-4 pl-5 pr-5 pt-3 pb-3" onclick="success2()">Add project</button>
-                        </div>
-                    </div>                    
+            <div class="card form-card p-5" style="width: 70%; padding-top: 7rem !important;">
+                <div class="wekcome mr-5">
+                    <h3>
+                        Welcome to the 4SOFT for Project Hub !
+                    </h3>
+                    <p class="pl-2 pt-2">
+                        We're excited to learn more about your Projects. Please review the following information 
+                        before submitting an application.
+                    </p>
                 </div>
+                <div class="who mt-5">
+                    <h3>What is 4SOFT for Hub ?</h3>
+                    <p class="pl-2 pt-2">
+                        4SOFT for project Hub is an exclusive program that provides qualified B2B startups with 
+                        technology and business enablement resources to help rapidly build products and accelerate 
+                        business growth, while providing opportunities to sell with our strong partner ecosystem and 
+                        alongside Microsoft sellers.
+                    </p>
+                </div>
+                <div class="info mt-5">
+                    <h3>What are the program selection guidelines?</h3>
+                    <p class="pl-2 pt-2">
+                        We prioritize enterprise technology, or B2B, startups who can best serve our customer base 
+                        and will benefit most from the program. New member applicants are evaluated using the following 
+                        criteria:
+                    </p>
+                    <ul class="pl-5 pt-3 pb-3">
+                        <li>
+                            Offering an innovative technical solution that supports customers in their digital transformation
+                        </li>
+                        <li>
+                            Less than seven years in existence
+                        </li>
+                        <li>Less than $25M in total annual revenue</li>
+                        <li>Seed, Series A, B, or C stage (or validated equivalent)</li>
+                    </ul>
+                </div>
+                <div class="after">
+                    <h3>What happens after I apply?</h3>
+                    <p class="pl-2 pt-2">
+                        Upon receiving your application, we will notify you within approximately 5 - 10 
+                        business days with a status update or to discuss additional details, when required. 
+                        Please note: submitting an application does not guarantee acceptance into the program.
+                    </p>
+                </div>
+
             </div>
 
         </div>
