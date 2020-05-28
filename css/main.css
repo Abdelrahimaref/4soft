@@ -315,6 +315,14 @@ h4 {
   .card {
     margin-top: 10rem;
   }
+
+  .dropdown2 {
+    display: none;
+  }
+
+  .our-nav {
+    justify-content: center !important;
+  }
 }
 @media (max-width: 992px) {
   .left {
@@ -385,14 +393,6 @@ h4 {
 
   h4 {
     font-size: 10px;
-  }
-
-  .dropdown2 {
-    display: none;
-  }
-
-  .our-nav {
-    justify-content: center !important;
   }
 }
 .dropdown {
