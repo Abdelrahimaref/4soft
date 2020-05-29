@@ -90,6 +90,14 @@ $('.dropdown').click(function () {
 $('.dropdown2').click(function () {
   $('.dropdown-menu2').toggle(300);
 });
+/*********** Question For Upload Source Code Or Not  *********/
+
+$('.upload').click(function () {
+  $('.for-upload').fadeIn(300);
+});
+$('.not-upload').click(function () {
+  $('.for-upload').fadeOut(300);
+});
 /***********   Check Box  **********/
 
 $('#youtube').click(function () {

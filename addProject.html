@@ -290,8 +290,29 @@
                             <input type="text" name="project-key" id="project-keyID" class="c-form__control text-secondary" maxlength="60">
                             <p class="form-note text-secondary">*ex: Web Developement , wordpress , design ...etc </p>    
                         </div> 
+                        <div class="col-lg-12 form-group mt-5 pt-5 mb-5 pb-5">
+                            Select What Do You Want To Do !!?
+                            <ul class="unstyled-list">
+                                <li class="upload">
+                                    <label class="container-inp pt-5 ml-4">
+                                        Upload source code and 4SOFT responsible for all modifications    
+                                        <input type="radio" name="check">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li class="not-upload">
+                                    <label class="container-inp pt-5 ml-4">
+                                        Not upload source code and I'm responsible for all modifications    
+                                        <input type="radio" name="check">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+
+    
+                            </ul>
+                        </div>
                         <!----------- For Upload Source Code --------->
-                        <div class="col-lg-12 form-group mt-5">
+                        <div class="col-lg-12 form-group mt-5 for-upload" style="display: none;">
                             <div class="gallery-service">
                                 <button class="btn btn-success mb-4 bg-transparent btn-photo" id="src-btn">Upload project source code</button>
                                 <input type="file" name="" id="file-btn" hidden="hidden">
